@@ -39,42 +39,43 @@ async def run_indexer(server_url=None, mongo_url=None, restart=None):
     #
     # For now, this also helps the SDK map between human-readable
     # event names and StarkNet events.
+
     runner.add_event_filters(
         filters=[
             EventFilter.from_event_name(
                 name="log_create_market",
-                address="0x0602fc01bd2603baf9946e1a532e37bbeb1ea2faa9f4b5b91bf9a1e10b3ebfcd",
+                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
             ),
             EventFilter.from_event_name(
                 name="log_create_bid",
-                address="0x0602fc01bd2603baf9946e1a532e37bbeb1ea2faa9f4b5b91bf9a1e10b3ebfcd",
+                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
             ),
             EventFilter.from_event_name(
                 name="log_create_ask",
-                address="0x0602fc01bd2603baf9946e1a532e37bbeb1ea2faa9f4b5b91bf9a1e10b3ebfcd",
+                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
             ),
             EventFilter.from_event_name(
                 name="log_bid_taken",
-                address="0x0602fc01bd2603baf9946e1a532e37bbeb1ea2faa9f4b5b91bf9a1e10b3ebfcd",
+                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
             ),
             EventFilter.from_event_name(
                 name="log_offer_taken",
-                address="0x0602fc01bd2603baf9946e1a532e37bbeb1ea2faa9f4b5b91bf9a1e10b3ebfcd",
+                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
             ),
             EventFilter.from_event_name(
                 name="log_buy_filled",
-                address="0x0602fc01bd2603baf9946e1a532e37bbeb1ea2faa9f4b5b91bf9a1e10b3ebfcd",
+                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
             ),
             EventFilter.from_event_name(
                 name="log_sell_filled",
-                address="0x0602fc01bd2603baf9946e1a532e37bbeb1ea2faa9f4b5b91bf9a1e10b3ebfcd",
+                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
             ),
             EventFilter.from_event_name(
                 name="log_delete_order",
-                address="0x0602fc01bd2603baf9946e1a532e37bbeb1ea2faa9f4b5b91bf9a1e10b3ebfcd",
+                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
             ),
         ],
-        index_from_block=0,
+        index_from_block=20000,
     )
 
     print("Initialization completed. Entering main loop.")
