@@ -44,38 +44,38 @@ async def run_indexer(server_url=None, mongo_url=None, restart=None):
         filters=[
             EventFilter.from_event_name(
                 name="log_create_market",
-                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
+                address="0x024a2811e0a5192ef00b89c2488541b3223d25eb483e5cedd612fd16a495f549",
             ),
             EventFilter.from_event_name(
                 name="log_create_bid",
-                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
+                address="0x024a2811e0a5192ef00b89c2488541b3223d25eb483e5cedd612fd16a495f549",
             ),
             EventFilter.from_event_name(
                 name="log_create_ask",
-                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
+                address="0x024a2811e0a5192ef00b89c2488541b3223d25eb483e5cedd612fd16a495f549",
             ),
             EventFilter.from_event_name(
                 name="log_bid_taken",
-                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
+                address="0x024a2811e0a5192ef00b89c2488541b3223d25eb483e5cedd612fd16a495f549",
             ),
             EventFilter.from_event_name(
                 name="log_offer_taken",
-                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
+                address="0x024a2811e0a5192ef00b89c2488541b3223d25eb483e5cedd612fd16a495f549",
             ),
             EventFilter.from_event_name(
                 name="log_buy_filled",
-                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
+                address="0x024a2811e0a5192ef00b89c2488541b3223d25eb483e5cedd612fd16a495f549",
             ),
             EventFilter.from_event_name(
                 name="log_sell_filled",
-                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
+                address="0x024a2811e0a5192ef00b89c2488541b3223d25eb483e5cedd612fd16a495f549",
             ),
             EventFilter.from_event_name(
                 name="log_delete_order",
-                address="0x029b3e5a2d3ea2149e12075639d167b5107d09f3c39d169d226a81134c5e0a6f",
+                address="0x024a2811e0a5192ef00b89c2488541b3223d25eb483e5cedd612fd16a495f549",
             ),
         ],
-        index_from_block=20000,
+        index_from_block=29000,
     )
 
     print("Initialization completed. Entering main loop.")
